@@ -1,9 +1,21 @@
-import React from 'react';
-
-export default function Footer() {
+function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-400 py-6 text-center text-sm">
-      <p>&copy; {new Date().getFullYear()} Universitas Klabat. All rights reserved.</p>
+    <footer className="bg-slate-950 border-t border-slate-800 py-8 text-center">
+
+      <p className="text-slate-300 font-semibold">
+        Kelas Front-End
+      </p>
+
+      <p className="text-slate-500 text-sm mt-2">
+        Universitas Klabat
+      </p>
+
+      <p className="text-slate-600 text-xs mt-4">
+        © {new Date().getFullYear()} Front-End. All rights reserved.
+      </p>
+
     </footer>
   );
 }
+
+export default Footer;

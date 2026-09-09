@@ -1,11 +1,21 @@
-import React from 'react';
-
-export default function Greeting({ nama, role }) {
+function Greeting({ nama, role }) {
   return (
-    <h2 className="text-3xl font-extrabold my-4">
-      <span className="inline-block bg-indigo-900/50 border border-indigo-700/60 rounded-full px-5 py-2 text-sm font-bold text-indigo-300">
-        Selamat Datang di Portofolio {nama} ({role})
-      </span>
-    </h2>
+    <div className="text-center">
+
+      <p className="text-3xl md:text-4xl font-extrabold text-white">
+        Selamat Datang
+      </p>
+
+      <p className="text-xl md:text-2xl font-semibold text-indigo-400 mt-2">
+        {nama}
+      </p>
+
+      <p className="text-slate-400 mt-2">
+        {role}
+      </p>
+
+    </div>
   );
 }
+
+export default Greeting;
